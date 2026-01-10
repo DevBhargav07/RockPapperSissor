@@ -38,6 +38,7 @@ userInput = take_input(userName)
 try:
 	while userCount+programCount+tied <= 3:
 		ProgrammGuess = do_play()
+		if not userInput: break
 		if ProgrammGuess.lower() == userInput.lower():
 			tied += 1
 			print(f'You both choose the same!')
