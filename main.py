@@ -1,5 +1,4 @@
-#today we are going to see whether we can complete all tasks for 
-#making a user to play rock paper scissor
+#still we didn't finished the count of times next time the user is trying to use the rockpapper sissors only 2 tries are coming.
 import random, pyfiglet, time
 
 
@@ -12,16 +11,22 @@ def do_play():
 	return rps[0]
 
 def refresh_count():
+	global userCount, programCount, tied
 	userCount,programCount, tied = 0, 0, 0
 
 def take_input(userName):
-	while True:
-		userInput = input(f"Hi, {userName}, Take One in Rock, Papper & Sissors:") if userName else input("Hi User , Take One in Rock, Papper & Sissors:") 
-		userInput = userInput.strip(' ')
-		if userInput not in rps: 
-			print(f'Please choose in {rps}')
-		elif userInput:
-			return userInput
+	try:
+		while True:
+			if not userName: userName="User"
+			userInput = input(f"Hi {userName}, Take One in Rock, Papper & Sissors: ") 
+			userInput = userInput.strip(' ')
+			if userInput not in rps: 
+				print(f'Please choose in {rps}')
+			elif userInput:
+				return userInput
+	
+	except KeyboardInterrupt:
+		print(f'Pleaseeee come back!!!')
 
 def print_success(userName):
 	success_msg = pyfiglet.figlet_format("Congracts!! {}".format(userName), font="slant")
@@ -41,7 +46,7 @@ try:
 			print(f'Computer: Yeah i know its Best Of three right')
 		elif ProgrammGuess == "Papper" and userInput == "Sissors":
 			userCount += 1
-			print(f'Computer:Yes, You won. Let"s play again i ll win this time.')
+			print(f'Computer:Yes, You won. Let"s play again i"ll win this time.')
 		elif ProgrammGuess == "Sissors" and userInput == "Rock":
 			userCount += 1
 			print(f'Computer:Yes, You won. You know what time it is payback time.')
@@ -52,7 +57,6 @@ try:
 			print(f'Evaluating results')
 			print('.....................')
 			time.sleep(2)
-			print('.................')
 			if userCount > programCount and userCount > tied:
 				print(f'{userName} Won')
 				print_success(userName)
