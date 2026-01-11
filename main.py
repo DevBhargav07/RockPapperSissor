@@ -2,7 +2,11 @@ import random, pyfiglet
 
 userCount = 0; programCount = 0; tied = 0
 rps = ["Rock", "Papper", "Sissors"]
-emojis_prg = {1: "\U0001f600", 2:"\U0001F606", 3: "\U0001F923", "claps": "\U0001F44F"}
+emojis_prg = {
+    1: "\U0001f600", 
+    2:"\U0001F606", 
+    3: "\U0001F923", 
+    "claps": "\U0001F44F"}
 computer_messages = {
     1: 'Let"s play again i"ll win this time.',
     2: "Yeah... Yeah.....You Won. You know what time it is payback time.", 
@@ -27,6 +31,7 @@ def take_input(userName):
             else:
                 return formattedInput
     except KeyboardInterrupt:
+        print(f'Pleaseeee come back!!!')
         return None
 
 def print_success(userName):
@@ -40,9 +45,7 @@ try:
         userInput = take_input(userName)
         if not userInput: 
             break
-            
         ProgrammGuess = do_play()
-        
         if ProgrammGuess == userInput:
             tied += 1
             print(f"You both chose {ProgrammGuess}, It's a tie")
@@ -67,7 +70,7 @@ try:
             else:
                 print(f'Sorry! {userName} You lost:')
                 try_again = input('Want to try again? (y/n): ').lower()
-                if try_again in ["yes", "y"]:
+                if try_again in ["yes", "y", "YES", "Y"]:
                     refresh_count()
                     continue
                 else:
