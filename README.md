@@ -11,6 +11,8 @@ This is a game to play by multi-user
   again it will be prompted a message shown as :- "Want to try again?:"
 - By pressing yes, y, Y, Yes, YES
 - This will again start the program itself to start again
-
+- You can start playing again
+- If you are keep loosing this will ask for play again?
+- Have fun with the game.......
 
 Note: There is no declaration of the Winning user in the middle of the game itself.
