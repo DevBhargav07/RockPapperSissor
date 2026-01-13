@@ -16,3 +16,12 @@ This is a game to play by multi-user
 - Have fun with the game.......
 
 Note: There is no declaration of the Winning user in the middle of the game itself.
+
+
+Requirements:-
+Python3
+pip install pyglet
+
+Import:-
+random
+pyglet
