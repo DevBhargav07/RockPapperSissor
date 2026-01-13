@@ -21,7 +21,3 @@ Note: There is no declaration of the Winning user in the middle of the game itse
 Requirements:-
 Python3
 pip install pyglet
-
-Import:-
-random
-pyglet
