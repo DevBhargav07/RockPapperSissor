@@ -20,4 +20,7 @@ Note: There is no declaration of the Winning user in the middle of the game itse
 
 Requirements:-
 Python3
-pip install pyglet
+
+To install Python visit:- https://www.python.org/downloads/
+
+pip install pyglet (use this line after creating virtual enivironment)
