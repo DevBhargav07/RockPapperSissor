@@ -10,7 +10,7 @@ emojis_prg = {
 computer_messages = {
     1: 'Let"s play again i"ll win this time.',
     2: "Yeah... Yeah.....You Won. You know what time it is payback time.", 
-    3: "Suck...! Oops You lost.."
+    3: "Suck..! come back, let's play again"
 }
 
 def do_play():
@@ -65,17 +65,20 @@ try:
             print(f'\nEvaluating results.....................')
             if userCount > programCount:
                 print(f'{userName} Won')
+                print(f'{userName}: {userCount}    Computer: {programCount}')
                 print_success(userName)
                 break
+            elif userCount == programCount:
+                print(f"It's a tie, {userName}")
             else:
                 print(f'Sorry! {userName} You lost:')
-                try_again = input('Want to try again? (y/n): ').lower()
-                if try_again in ["yes", "y", "YES", "Y"]:
-                    refresh_count()
-                    continue
-                else:
-                    print(f'Please come again to play! {emojis_prg[1]}')
-                    break
+            try_again = input('Want to try again? (y/n): ').lower()
+            if try_again in ["yes", "y", "YES", "Y"]:
+                refresh_count()
+                continue
+            else:
+                print(f'Please come again to play! {emojis_prg[1]}')
+                break
         
 except KeyboardInterrupt:
     print(f'\nPleaseeee come back!!!')
