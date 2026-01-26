@@ -6,7 +6,7 @@ This is a game to play by multi-user
 - first it will ask for the username
 - if given takes that if not go as User itself
 - As for a game this is best of three 
-- Who mins more will be marked as Winner
+- Who wins more will be marked as Winner
 - When user lost it will ask for if the user wants to play again if user wants to play
   again it will be prompted a message shown as :- "Want to try again?:"
 - By pressing yes, y, Y, Yes, YES
