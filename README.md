@@ -17,10 +17,17 @@ This is a game to play by multi-user
 
 Note: There is no declaration of the Winning user in the middle of the game itself.
 
+The computer guess would be taken from a list using random module.
+
 
 Requirements:-
 Python3
 
+Installations Required:-
+pyglets
+
 To install Python visit:- https://www.python.org/downloads/
 
-pip install pyglet (use this line after creating virtual enivironment)
+To install pyglets:- 
+pip install pyglet
+Use Virtual environment for the better use
