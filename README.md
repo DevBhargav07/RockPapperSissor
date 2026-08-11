@@ -20,12 +20,6 @@ Note: There is no declaration of the Winning user in the middle of the game itse
 The computer guess would be taken from a list using random module.
 
 
-Requirements:-
-Python3
-
-Installations Required:-
-pyglets
-
 To install Python visit:- https://www.python.org/downloads/
 
 To install requirements:-
