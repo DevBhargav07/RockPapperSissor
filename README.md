@@ -28,6 +28,5 @@ pyglets
 
 To install Python visit:- https://www.python.org/downloads/
 
-To install pyglets:- 
-pip install pyglet
-Use Virtual environment for the better use
+To install requirements:-
+Try to use pip install -r requirements.txt
