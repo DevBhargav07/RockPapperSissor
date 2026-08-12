@@ -24,3 +24,6 @@ To install Python visit:- https://www.python.org/downloads/
 
 To install requirements:-
 Try to use pip install -r requirements.txt
+
+############################################################################
+This will replicate real world scenarios
