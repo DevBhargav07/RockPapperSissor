@@ -73,7 +73,7 @@ try:
             else:
                 print(f'Sorry! {userName} You lost:')
             try_again = input('Want to try again? (y/n): ').lower()
-            if try_again in ["yes", "y", "YES", "Y"]:
+            if try_again in ["yes", "y"]:
                 refresh_count()
                 continue
             else:
