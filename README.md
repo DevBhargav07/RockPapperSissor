@@ -1,5 +1,6 @@
-Rock Papper Sissors Game
+# Rock Papper Sissors Game
 
+### Overview
 This is a game to play by multi-user
 - where one is the user and another is the Computer itself.
 - when playing this game
@@ -20,10 +21,12 @@ Note: There is no declaration of the Winning user in the middle of the game itse
 The computer guess would be taken from a list using random module.
 
 
-To install Python visit:- https://www.python.org/downloads/
+To install Python visit:- 
+``` 
+https://www.python.org/downloads/
+```
 
 To install requirements:-
 Try to use pip install -r requirements.txt
 
 ############################################################################
-This will replicate real world scenarios
